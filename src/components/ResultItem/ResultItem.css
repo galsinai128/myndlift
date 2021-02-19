@@ -122,8 +122,8 @@
 }
 
 .address-info{
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 600;
     text-align: end;
     margin-top: 5px;
 }
@@ -151,11 +151,11 @@
 
 .specialties-title{
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .margin-left{
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
 .toggle-view{

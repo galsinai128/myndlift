@@ -5,7 +5,7 @@ import ResultsList from '../ResultsList/ResultsList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-function SearchInput() {
+function SearchInput({setisSearchEmpty}) {
   
   const [value, handleChange] = useState("");
   const [searchedValue, setSearchedValue] = useState("");
@@ -14,7 +14,9 @@ function SearchInput() {
   function handleSubmit(e){
       e.preventDefault();
       setSearchedValue(value);
-      setFilteredData(getFilteredData(value));
+      let filteredData = getFilteredData(value); 
+      setFilteredData(filteredData);
+      filteredData.length ? setisSearchEmpty(false) : setisSearchEmpty(true);
   }
 
   function computeResults(){

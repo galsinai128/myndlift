@@ -20,6 +20,8 @@
 }
 
 .submit-btn{
+    font-size: 1.1rem;
+    font-weight: 600;
     color: white;
     background-color: #4be0d0;
     border: none;

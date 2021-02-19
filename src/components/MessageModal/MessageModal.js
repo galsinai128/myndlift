@@ -63,7 +63,7 @@ function MessageModal({name, email, closeModal}) {
                 />
             </form>
             <div className="modal-information-container">
-                <div className="modal-information-pharagraph">Dont be shy.</div>
+                <div className="modal-information-pharagraph">Don't be shy.</div>
                 <div className="modal-information-pharagraph">Our Mindlift providers are here to help you and are pleased to hear from you.</div>
                 <div className="modal-information-pharagraph">Feel free to ask what you want but keep it short, 200 words or less, this is just an inital contact.</div>
                 <div className="modal-information-pharagraph">Remember to double check your email and phone number.</div>

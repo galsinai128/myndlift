@@ -12,8 +12,8 @@
 }
 
 .modal-title{
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .modal-body{
@@ -22,7 +22,7 @@
 }
 
 .modal-input-form{
-    width: 50%
+    width: 45%
 }
 
 .modal-input-element{
@@ -44,7 +44,7 @@
     color: white;
     background-color: #4be0d0;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 20px;
     box-shadow: 4px 4px 8px 0px rgba(196,196,196,1);
     cursor: pointer;
@@ -64,7 +64,7 @@ textarea { resize: none; }
 .modal-information-container{
     margin-left: 100px;
     text-align: start;
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ textarea { resize: none; }
 
 .modal-information-pharagraph{
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 ::placeholder{
