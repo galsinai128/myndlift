@@ -2,6 +2,7 @@
 
 - npm install
 - npm start
+
 in browser run http://localhost:3000/
 
 limitations:
