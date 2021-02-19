@@ -1,0 +1,237 @@
+.result-item{
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: #5a6077;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(196,196,196,1);
+    border-radius: 20px;
+}
+
+.upper-container{
+    display: flex;
+
+}
+
+.inner-left{
+    display: flex;
+    width: 80%;
+}
+
+.total-category-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.category-container{
+    display: flex;
+    width: 100%;
+}
+
+.info-container{
+    width: 60%;
+}
+
+.item-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-clinic-name{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.item-description{
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    animation: close 0.1s linear 0.1s forwards;
+}
+
+.box {
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0,1,0,1);
+  }
+  .box.open {
+    max-height: 100rem;
+    transition: max-height 0.5s cubic-bezier(0.9, 0, 0.8, 0.2);
+  }
+
+.open .item-description {
+    animation: open 0.1s linear 0s forwards;
+}
+
+@keyframes open {
+    from {
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+    }
+    to {
+      line-clamp: initial;
+      -webkit-line-clamp: initial;
+    }
+  }
+
+@keyframes close {
+    from {
+      line-clamp: initial;
+      -webkit-line-clamp: initial;
+    }
+    to {
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+    }
+  }
+
+/* .biography{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+} */
+
+.inner-right{
+    width: 30%;
+}
+
+.lower-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.specialties-container{
+    display: flex;
+    margin-left: 60px;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.item-info-block{
+    text-align: start;
+}
+
+.address-info{
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: end;
+    margin-top: 5px;
+}
+
+.item-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.specialtie-item{
+    background-color: #ececec;
+    font-weight: 500;
+    padding: 5px 15px;
+    margin: 0 10px 10px 0;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.specialties-title{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.margin-left{
+    margin-left: 20px;
+}
+
+.toggle-view{
+    color: #4be0d0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+.message-btn{
+    color: white;
+    background-color: #4be0d0;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    box-shadow: 4px 4px 8px 0px rgba(196,196,196,1);
+    outline: none;
+    font-size: 0.75rem;
+    padding: 10px 0;
+}
+
+.message-btn:hover{
+    color: #4be0d0;
+    background-color: white;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    .result-item{
+        padding: 10px;
+
+    }
+
+    .upper-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner-left{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inner-right{
+        width: 100%;
+    }
+
+    .address-info{
+        text-align: start;
+    }
+
+    .info-container{
+        width: 100%;
+    }
+    .category-container{
+        flex-direction: column;
+    }
+
+    .lower-container{
+        flex-direction: column;
+    }
+    .specialties-container{
+        width: 100%;
+        margin: 0;
+    }
+    .specialties-title{
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    
+  }
