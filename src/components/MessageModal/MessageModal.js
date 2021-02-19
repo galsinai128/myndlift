@@ -15,7 +15,7 @@ function MessageModal({name, email, closeModal}) {
   function handleSubmit(e){
     e.preventDefault();
     if (!yourName || !yourEmail || !yourPhone || !message) return   
-    closeModal();
+    closeModal(e);
     sendMessage(email,{
         yourName,
         yourEmail,

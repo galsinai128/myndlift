@@ -8,14 +8,14 @@ function ResultItem({item}) {
 
   const [isModalOpen, setIsModalOpen] = useState(false); 
   const [toggleMoreInfo, setToggleMoreInfo] = useState(false);
-  const descriptionEl = useRef(null)
 
-
-  function openModal(){
+  function openModal(e){
+    e.stopPropagation();
     setIsModalOpen(true);
   }
 
-  function closeModal(){
+  function closeModal(e){
+    e.stopPropagation();
     setIsModalOpen(false);
   }
 
@@ -65,19 +65,19 @@ function ResultItem({item}) {
           <div className="toggle-view">
             {toggleMoreInfo ? "Hide Profile" : "View Profile"}
           </div>
-          <div className="message-btn" onClick={openModal}>
+          <div className="message-btn" onClick={(e)=>openModal(e)}>
             Send Message
           </div>
         </div>
       </div>
       <Modal
         show={isModalOpen}
-        closeModal={closeModal}
+        closeModal={(e)=>closeModal(e)}
       >
           <MessageModal
             name = {`${item.firstName} ${item.lastName}`}
             email= {item.email}
-            closeModal={closeModal}
+            closeModal={(e)=>closeModal(e)}
           />
       </Modal>
     </div>

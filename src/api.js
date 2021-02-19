@@ -22,5 +22,5 @@ export function getFilteredData(filterText){
 
 export function sendMessage(email,data){
     //do something!!
-    console.log(email,data)
+    //console.log(email,data)
 }
